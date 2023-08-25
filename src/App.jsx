@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 
 const App = () => {
-  let [setValue, setSetValue] = useState(0);
-  let setCounter = (value) => {
+  const [setValue, setSetValue] = useState(0);
+  const setCounter = (value) => {
     if (value === "+") return setSetValue(setValue+1);
     else if (value === "-") return setSetValue(setValue-1);
     else if (value === "reset") return setSetValue(0)
