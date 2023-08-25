@@ -8,6 +8,9 @@ const Calculator = () => {
   const handelClear = () => {
     setCounter(Counter.slice(0, -1));
   };
+  const caluculate = () => {
+    setCounter(eval(Counter).toString());
+  };
   return (
     <>
       <input type="text" value={Counter} readOnly />
@@ -39,15 +42,28 @@ const Calculator = () => {
         <button value="9" onClick={handelValue}>
           9
         </button>
-        <button value="+" onClick={handelValue}>
+        <button
+          value="+"
+          onClick={() => {
+            handelValue({ target: { value: "+" } });
+          }}
+        >
           +
         </button>
-        <button value="-" onClick={handelValue}>
+        <button
+          value="-"
+          onClick={() => {
+            handelValue({ target: { value: "-" } });
+          }}
+        >
           -
         </button>
-        <button value="*" onClick={() => {
-          handelValue({target: { value: "*" }})
-        }}>
+        <button
+          value="*"
+          onClick={() => {
+            handelValue({ target: { value: "*" } });
+          }}
+        >
           *
         </button>
         <button
@@ -61,6 +77,7 @@ const Calculator = () => {
         <button value="clear" onClick={handelClear}>
           clear
         </button>
+        <button onClick={caluculate}>=</button>
       </div>
     </>
   );
