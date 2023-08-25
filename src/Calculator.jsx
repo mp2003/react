@@ -45,7 +45,9 @@ const Calculator = () => {
         <button value="-" onClick={handelValue}>
           -
         </button>
-        <button value="*" onClick={handelValue}>
+        <button value="*" onClick={() => {
+          handelValue({target: { value: "*" }})
+        }}>
           *
         </button>
         <button
