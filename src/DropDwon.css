@@ -1,0 +1,19 @@
+*{
+    margin: 0;;padding: 0;
+}
+.container nav{
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+}
+
+@media (max-width: 450px) {
+    .container{
+        display: flex;
+        justify-content: center;
+    }
+    .container nav{
+    display: inline-block;
+
+}
+}
