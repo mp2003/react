@@ -20,12 +20,12 @@ const DropDwon = () => {
           </li>
         </nav>
       </ul>
-      <Swi>
+      <Routes>
         <Route path="/" element={<div>Welcome to the Home Page</div>} />
         <Route path="/about-us" element={<Dummy />} />
         <Route path="/contact" element={<Dummy />} />
         <Route path="/testimonial" element={<Dummy />} />
-      </Swi>
+      </Routes>
     </>
   );
 };
