@@ -4,7 +4,7 @@ import Calculator from "./Calculator.jsx";
 const App = () => {
   return (
     // <Counter />
-    <Calculator />
+    // <Calculator />
   );
 };
 export default App;
