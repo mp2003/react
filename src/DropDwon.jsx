@@ -1,7 +1,6 @@
 import React from "react";
 import { NavLink, Routes, Route } from "react-router-dom";
 import Dummy from "./Dummy";
-
 const DropDwon = () => {
   return (
     <>
@@ -21,14 +20,13 @@ const DropDwon = () => {
           </li>
         </nav>
       </ul>
-      <Routes>
+      <Swi>
         <Route path="/" element={<div>Welcome to the Home Page</div>} />
         <Route path="/about-us" element={<Dummy />} />
         <Route path="/contact" element={<Dummy />} />
         <Route path="/testimonial" element={<Dummy />} />
-      </Routes>
+      </Swi>
     </>
   );
 };
-
 export default DropDwon;
