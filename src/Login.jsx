@@ -1,14 +1,15 @@
 import React, { useState } from "react";
-import { NavLink, Routes , Route   } from "react-router-dom";
-import  Register  from "./Register"
+import { NavLink, Routes, Route } from "react-router-dom";
+import Register from "./Register";
 
 const Login = (props) => {
   const [UserName, setUserName] = useState("");
   const [password, setPassword] = useState("");
-  const handelSubmit =(e) => {
+  const handelSubmit = (e) => {
     e.preventDefault();
-    console.log(UserName);    
-  }
+    console.log(UserName);
+    console.log(password);
+  };
   return (
     <>
       <div className="heading">
@@ -19,7 +20,7 @@ const Login = (props) => {
         <form onSubmit={handelSubmit}>
           <label for="email">Username</label>
           <input
-            type="email"
+            type="text"
             name="username"
             placeholder="UserName Or Email"
             value={UserName}
@@ -41,11 +42,19 @@ const Login = (props) => {
         </form>
         <span>
           Don't have an Account?{" "}
-          <NavLink to="/Register" onClick={()=>{props.onFormSwitch('Register')}}> Register Here</NavLink>{" "}    
+          <NavLink
+            to="/Register"
+            onClick={() => {
+              props.onFormSwitch("Register");
+            }}
+          >
+            {" "}
+            Register Here
+          </NavLink>{" "}
         </span>
-       <Routes>
-       <Route path="/Register" element={<Register />} />
-       </Routes>
+        <Routes>
+          <Route path="/Register" element={<Register />} />
+        </Routes>
       </div>
     </>
   );
