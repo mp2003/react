@@ -1,24 +1,32 @@
 import React, { useState } from "react";
 import { NavLink, Routes , Route   } from "react-router-dom";
-import  Register  from "./Register"
 
-const Login = () => {
+const Register = () => {
   const [UserName, setUserName] = useState("");
   const [password, setPassword] = useState("");
-  const handelSubmit =(e) => {
+  const [name, setName] = useState("");
+  const handelSubmit = (e) => {
     e.preventDefault();
-    console.log(UserName);    
-  }
+    console.log(UserName);
+  };
   return (
     <>
-      <div className="heading">
-        <h2>Welcome to Login</h2>
-        <span className="">Please enter your Username and your Password</span>
-      </div>
       <div className="login-detail">
         <form onSubmit={handelSubmit}>
-          <label for="email">Username</label>
+          <label htmlFor="name">Name</label>
           <input
+          id="name"
+            type="text"
+            value={name}
+            onChange={(e) => {
+              setName(e.target.value);
+            }}
+            placeholder="Name"
+          />
+
+          <label htmlFor="email">Username</label>
+          <input
+          id="email"
             type="email"
             name="username"
             placeholder="UserName Or Email"
@@ -27,8 +35,9 @@ const Login = () => {
               setUserName(e.target.value);
             }}
           ></input>
-          <label for="password">Password</label>
+          <label htmlFor="password">Password</label>
           <input
+          id="password"
             type="password"
             name="password"
             placeholder="*********"
@@ -37,10 +46,10 @@ const Login = () => {
               setPassword(e.target.value);
             }}
           ></input>
-          <button>Login</button>
+          <button>Create Account</button>
         </form>
         <span>
-          Don't have an Account?{" "}
+          Already have an Account?{" "}
           <NavLink to="/Register"> Register Here</NavLink>{" "}    
         </span>
        <Routes>
@@ -51,4 +60,4 @@ const Login = () => {
   );
 };
 
-export default Login;
+export default Register;
