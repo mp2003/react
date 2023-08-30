@@ -42,36 +42,16 @@ const Calculator = () => {
         <button value="9" onClick={handelValue}>
           9
         </button>
-        <button
-          value="+"
-          onClick={() => {
-            handelValue({ target: { value: "+" } });
-          }}
-        >
+        <button value="+" onClick={handelValue}>
           +
         </button>
-        <button
-          value="-"
-          onClick={() => {
-            handelValue({ target: { value: "-" } });
-          }}
-        >
+        <button value="-" onClick={handelValue}>
           -
         </button>
-        <button
-          value="*"
-          onClick={() => {
-            handelValue({ target: { value: "*" } });
-          }}
-        >
+        <button value="*" onClick={handelValue}>
           *
         </button>
-        <button
-          value="/"
-          onClick={() => {
-            handelValue({ target: { value: "/" } });
-          }}
-        >
+        <button value="/" onClick={handelValue}>
           /
         </button>
         <button value="clear" onClick={handelClear}>
