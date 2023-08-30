@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { NavLink, Routes , Route   } from "react-router-dom";
 import  Register  from "./Register"
 
-const Login = () => {
+const Login = (props) => {
   const [UserName, setUserName] = useState("");
   const [password, setPassword] = useState("");
   const handelSubmit =(e) => {
@@ -41,7 +41,7 @@ const Login = () => {
         </form>
         <span>
           Don't have an Account?{" "}
-          <NavLink to="/Register"> Register Here</NavLink>{" "}    
+          <NavLink to="/Register" onClick={()=>{props.onFormSwitch('Register')}}> Register Here</NavLink>{" "}    
         </span>
        <Routes>
        <Route path="/Register" element={<Register />} />

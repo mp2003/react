@@ -8,6 +8,9 @@ import Register from "./Register.jsx";
 
 const App = () => {
   const [showForm, setShowForm] = useState("login");
+  const toggelForm = (formName) => {
+    setShowForm(formName);
+  };
   return (
     <>
       {/* 
@@ -15,7 +18,11 @@ const App = () => {
          <Calculator />
     <DropDwon />
     <Counter />*/}
-      {showForm === "lgin" ? <Login /> : <Register />}
+      {showForm === "login" ? (
+        <Login onFormSwitch={toggelForm} />
+      ) : (
+        <Register onFormSwitch={toggelForm} />
+      )}
     </>
   );
 };
