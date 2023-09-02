@@ -3,7 +3,7 @@
   padding: 0;
   background: #93b1a6;
 }
-
+/* hello */
 .container {
   overflow: hidden;
   position: absolute;
@@ -16,38 +16,37 @@
 }
 .icon-container {
   background: #040d12;
-display: flex;
-flex-direction: column;
-align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .l-icon {
   color: #93b1a6;
   background: #040d12;
   position: relative;
-  top:30px;
+  top: 30px;
   font-size: 45px;
 }
 .icon {
-    position: relative;
-    top: 20vh;
-    margin-bottom: 50px;
+  position: relative;
+  top: 20vh;
+  margin-bottom: 50px;
   color: #93b1a6;
   background: #040d12;
   font-size: 35px;
   transition: transform 0.4s ease;
 }
 .b-icon {
-    color: #93b1a6;
-    background: #040d12;
-    position: absolute;
-    bottom: 30px;
-    font-size: 45px;
-  }
+  color: #93b1a6;
+  background: #040d12;
+  position: absolute;
+  bottom: 30px;
+  font-size: 45px;
+}
 
-  .icon:hover{
-    
-    color: #5C8374;
-    transform: scale(1.4);
-    border-radius: 50%;
-  }
+.icon:hover {
+  color: #5c8374;
+  transform: scale(1.4);
+  border-radius: 50%;
+}
