@@ -14,15 +14,21 @@ const App = () => {
   return (
     <>
       {/* 
-
          <Calculator />
     <DropDwon />
-    <Counter />*/}
-      {showForm === "login" ? (
+    <Counter />
+    
+    ----------------------------------------------------------------
+    {showForm === "login" ? (
         <Login onFormSwitch={toggelForm} />
       ) : (
         <Register onFormSwitch={toggelForm} />
       )}
+    ----------------------------------------------------------------
+    
+    */
+  }
+      
     </>
   );
 };
