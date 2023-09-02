@@ -5,7 +5,7 @@ import DropDwon from "./DropDwon.jsx";
 import { Router } from "react-router-dom";
 import Login from "./Login.jsx";
 import Register from "./Register.jsx";
-
+import NavBar from "./NavBar.jsx";
 const App = () => {
   const [showForm, setShowForm] = useState("login");
   const toggelForm = (formName) => {
@@ -25,10 +25,8 @@ const App = () => {
         <Register onFormSwitch={toggelForm} />
       )}
     ----------------------------------------------------------------
-    
-    */
-  }
-      
+    */}
+    <NavBar />
     </>
   );
 };
