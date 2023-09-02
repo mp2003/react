@@ -7,17 +7,17 @@ const NavBar = () => {
   return (
     <>
       <div className="container">
-        <BiLogoReact className="l-icon" />
-
         <div className="icon-container">
+          <BiLogoReact className="l-icon" />
+
           <BiHomeAlt2 className="icon" />
-          
+
           <BiSearchAlt className="icon" />
-          
+
           <BiUser className="icon" />
-          
-          <PiHamburger className="icon" />  
-          </div>
+
+          <PiHamburger className="icon" />
+        </div>
       </div>
     </>
   );

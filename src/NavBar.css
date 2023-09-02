@@ -16,7 +16,10 @@
 }
 .icon-container {
   background: #040d12;
-
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: space-evenly;
 }
 
 .l-icon {
