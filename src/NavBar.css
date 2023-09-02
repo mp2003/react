@@ -1,0 +1,11 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container{
+    height: 100vh;
+    width: 75px;
+    background: blue;
+    border-radius: 0 25px 25px 0;
+}
