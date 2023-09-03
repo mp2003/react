@@ -1,0 +1,12 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.app-container {
+  display: flex;
+}
+aside {
+
+  width: 65px;
+  margin: 0;
+}

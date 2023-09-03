@@ -5,7 +5,12 @@
 }
 /* hello */
 
+.header{
+  width: 65px;
+  margin: 0;
+}
 .container {
+  position: fixed;
   overflow: hidden;
   height: 100vh;
   width: 55px;
@@ -17,6 +22,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 
 .l-icon {
@@ -41,10 +47,18 @@
   position: absolute;
   bottom: 30px;
   font-size: 45px;
+  transition: transform 0.4s ease;
+
 }
 
 .icon:hover {
   color: #5c8374;
   transform: scale(1.4);
+  border-radius: 50%;
+}
+
+.b-icon:hover {
+  color: #5c8374;
+  transform: scale(1.2);
   border-radius: 50%;
 }
