@@ -4,15 +4,13 @@
   background: #93b1a6;
 }
 /* hello */
+
 .container {
   overflow: hidden;
-  position: absolute;
-  left: 25px;
-  top: 35px;
-  height: 90vh;
-  width: 75px;
+  height: 100vh;
+  width: 55px;
   background: #040d12;
-  border-radius: 35px;
+  border-radius: 0 15px 15px 0;
 }
 .icon-container {
   background: #040d12;
