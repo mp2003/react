@@ -11,10 +11,11 @@ import Search from "./Search.jsx";
 import User from "./User.jsx";
 import Menu from "./Menu.jsx";
 import "./App.css";
+import Default from "./Default.jsx";
 
 const App = () => {
   // const [showForm, setShowForm] = useState("login");
-  const [showComponent, setShowComponent] = useState("");
+  const [showComponent, setShowComponent] = useState("default");
   // const toggelForm = (formName) => {
   //   setShowForm(formName);
   // };
@@ -41,6 +42,8 @@ const App = () => {
           <NavBar component={toggelComponent} />
         </aside>
         <main>
+          {showComponent === "default" && <Default />}
+
           {showComponent === "home" && <Home />}
           {showComponent === "search" && <Search />}
           {showComponent === "user" && <User />}
