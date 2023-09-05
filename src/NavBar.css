@@ -10,6 +10,8 @@
   margin: 0;
 }
 .container {
+  display: flex;
+  flex-direction: row;
   position: fixed;
   overflow: hidden;
   height: 100vh;
@@ -63,7 +65,9 @@
 }
 
 @media (min-width: 425px) {
-  * {
-    background: red;
+
+  .container {
+    display: flex;
+    flex-direction: column;
   }
 }
